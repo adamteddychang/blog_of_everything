@@ -51,11 +51,3 @@ Style/HashTransformKeys:
   Enabled: false
 Style/HashTransformValues:
   Enabled: false
-Metrics/CyclomaticComplexity:
-  Enabled: false
-Style/OptionalBooleanParameter:
-  Enabled: false
-Metrics/ParameterLists: 
-  Enabled: false
-Layout/EndOfLine:
-  Enabled: false

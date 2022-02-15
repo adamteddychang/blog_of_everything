@@ -1,21 +1,15 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Catalog Of My Things 
+# Blog-of-everything
 
-> This is the Ruby capstone group project, in this project we created a console app with an user interface.
-
-> The app allows you to add items of your choice, i.e. books or music albums, and it will also allow you to create a label or genre for said item. 
-
-> The application preserves user data by using JSON files while exiting the application. 
-
-> It will load data from the JSON files while starting up the application. 
-
+> This is the Ruby on Rails application, in this project I will create a blog with ruby on rails with Postgresql database.
 
 ## Built With
 
 - Ruby
+- Ruby on Rails
 - Git
-- Rspec
+- Postgresql
 
 ## Getting Started
 
@@ -24,7 +18,7 @@ To get a local copy up and running follow these simple example steps.
 - Copy Repo Link
 
 ```
-https://github.com/adamteddychang/catalog-of-my-things.git
+https://github.com/adamteddychang/blog_of_everything.git
 ```
 - Get the directory that you want to clone the repository.
 
@@ -33,13 +27,13 @@ https://github.com/adamteddychang/catalog-of-my-things.git
 - Copy clone of the Repo
 
 ```
-git clone https://github.com/adamteddychang/catalog-of-my-things.git
+git clone https://github.com/adamteddychang/blog_of_everything.git
 ```
 
 - Go to the repository folder in your command prompt.
 
 ```
-cd catalog-of-my-things
+cd blog_of_everything
 ```
 - Install bundles
 
@@ -47,30 +41,16 @@ cd catalog-of-my-things
 bundle install
 ```
 
-- Run main.rb
-
-```
-ruby main.rb
+- rails s
 ```
 
-## To run the tests
-- For running all the tests
 
-```
-rspec
-```
-
-- For running test for the specific file
-
-```
-rspec spec spec/filename.rb
-```
 
 ### Prerequisites
 
 - Ruby
-- Rspec
-
+- Ruby on Rails
+- Postgresql
 ## Authors
 
 👤 **You-Wei (Adam) Chang** 
@@ -79,10 +59,7 @@ rspec spec spec/filename.rb
 - Twitter: [@AdamChang3](https://twitter.com/AdamChang3) 
 - LinkedIn: [You-Wei(Adam) Chang](https://www.linkedin.com/in/adamteddychang/)
 
-👤 **Orçun Uğur**
 
-- GitHub: [@githubhandle](https://github.com/luftedar)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/orcunugur)
 
 
 ## 🤝 Contributing
