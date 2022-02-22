@@ -35,7 +35,7 @@ ActiveRecord::Schema[7.0].define(version: 20_220_217_104_945) do
   create_table 'posts', force: :cascade do |t|
     t.string 'title'
     t.text 'text'
-    t.integer 'commentscounter'
+    t.integer 'comments_counter'
     t.integer 'likes_counter'
     t.datetime 'created_at', null: false
     t.datetime 'updated_at', null: false
