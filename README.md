@@ -41,8 +41,12 @@ cd blog_of_everything
 bundle install
 ```
 
-- rails s
+- rails s 
+
+
+- rails db:setup to create databases and populate them with seeds.rb
 ```
+
 
 
 
