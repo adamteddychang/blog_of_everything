@@ -5,6 +5,7 @@ AllCops:
     - "Rakefile"
     - "node_modules/**/*"
     - 'bin/*'
+    - 'db/seeds.rb'
 
   DisplayCopNames: true
 
@@ -18,7 +19,7 @@ Metrics/ClassLength:
   Max: 150
 Metrics/BlockLength:
   IgnoredMethods: ['describe']
-  Max: 40
+  Max: 50
 
 
 Style/Documentation:
@@ -51,4 +52,6 @@ Style/HashTransformKeys:
 Style/HashTransformValues:
   Enabled: false
 Layout/EndOfLine:
+  Enabled: false
+Style/SymbolProc:
   Enabled: false
