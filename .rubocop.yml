@@ -5,6 +5,7 @@ AllCops:
     - "Rakefile"
     - "node_modules/**/*"
     - 'bin/*'
+    - 'db/schema.rb'
 
   DisplayCopNames: true
 
@@ -51,3 +52,6 @@ Style/HashTransformKeys:
   Enabled: false
 Style/HashTransformValues:
   Enabled: false
+Layout/EndOfLine:
+  Enabled: false
+
