@@ -1,15 +1,13 @@
-
-
-<h1 class= "create-post">Create a post</h1>
+<h1 class="create-post">Create a post</h1>
 <%= form_with url: user_posts_path, scope: :data do |form| %>
-	<section	section class="post-form">
-		<div class="title-box">
+<section section class="post-form">
+	<div class="title-box">
 		<%= form.label :title, "Title:   "%>
 		<%= form.text_field :title, placeholder: "Title", required: true %>
-		</div>
-		<div class="text-box-contain">
+	</div>
+	<div class="text-box-contain">
 		<%= form.text_area :text, class: "text-box",  placeholder: "Enter text here", rows: 16, required: true %>
-		</div>
+	</div>
 	<%= form.submit "Post", class: "button"%>
-  </section>
-<% end %> 
+</section>
+<% end %>

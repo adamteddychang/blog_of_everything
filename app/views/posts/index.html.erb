@@ -1,12 +1,11 @@
-
-<section class = "user-posts">
-<%= render 'layouts/alerts' if notice %>
+<section class="user-posts">
+  <%= render 'layouts/alerts' if notice %>
 
   <div class='header-user'>
-    <div class="user-img"><img src= <%=@user.photo%>></div>
-    <div class = 'user_item'>
-    <h2>User <%= @user.name%></h2>
-    <p>Number of posts : <%= @user.posts_counter%></p>
+    <div class="user-img"><img src=<%=@user.photo%>></div>
+    <div class='user_item'>
+      <h2>User <%= @user.name%></h2>
+      <p>Number of posts : <%= @user.posts_counter%></p>
     </div>
   </div>
 
@@ -24,8 +23,8 @@
         </div>
       </li>
     </ul>
-    <ul class = 'recent-comms'>
-      <li class= 'comment'>
+    <ul class='recent-comms'>
+      <li class='comment'>
         <% post.recent_5_comments.each do |comment| %>
         <p> Username: <%= comment.text %></p>
         <%end%>
@@ -33,4 +32,4 @@
     </ul>
     <%end%>
   </div>
-</div>
+  </div>

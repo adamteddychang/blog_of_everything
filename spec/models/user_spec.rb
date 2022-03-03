@@ -40,10 +40,12 @@ RSpec.describe User, type: :model do
 
   describe 'user model methods tests' do
     before do
-      @user = User.new(name: 'Adam', bio: 'I am a software developer', photo: 'http://genericphoto.com', posts_counter: 0)
+      @user = User.new(name: 'Adam', bio: 'I am a software developer', photo: 'http://genericphoto.com',
+                       posts_counter: 0)
       4.times do
         Post.new(
-          title: 'Testing post',text: 'This is a post?',comments_counter: 0,likes_counter: 0,user_id: @user.id)
+          title: 'Testing post', text: 'This is a post?', comments_counter: 0, likes_counter: 0, user_id: @user.id
+        )
       end
     end
 
