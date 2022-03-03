@@ -2,7 +2,7 @@
   <div class="header-user">
 
     <div class='user-img'>
-      <img src=<%=@user.photo%>>
+      <%=image_tag("random-face.png", class:"user-img",  alt: @user.name)%>
     </div>
 
     <div class="user_item">

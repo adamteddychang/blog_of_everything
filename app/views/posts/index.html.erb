@@ -2,7 +2,10 @@
   <%= render 'layouts/alerts' if notice %>
 
   <div class='header-user'>
-    <div class="user-img"><img src=<%=@user.photo%>></div>
+    <div class="user-img">
+      <%=image_tag("random-face.png", class:"user-img",  alt: @user.name)%>
+
+    </div>
     <div class='user_item'>
       <h2>User <%= @user.name%></h2>
       <p>Number of posts : <%= @user.posts_counter%></p>
