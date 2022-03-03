@@ -1,5 +1,7 @@
 
 <section class = "user-posts">
+<%= render 'layouts/alerts' if notice %>
+
   <div class='header-user'>
     <div class="user-img"><img src= <%=@user.photo%>></div>
     <div class = 'user_item'>
