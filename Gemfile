@@ -4,7 +4,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '3.0.3'
 
 gem 'rubocop', '>= 1.0', '< 2.0'
-
+gem 'bullet'
 gem 'rails-controller-testing'
 gem 'rspec', '~>3.0'
 gem 'rspec-rails'
