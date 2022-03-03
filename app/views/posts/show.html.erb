@@ -2,11 +2,12 @@
   <div class="whole-post">
     <div class="post_header">
       <h3><%= @post.title %> by <%= @user.name %></h3>
-
+      <%= render 'layouts/alerts' if notice %>
       <div class="comments-likes">
         <p>Comments: <%= @post.comments_counter %></p>
         <p>Likes: <%=  @post.likes_counter %></p>
         <%= form_with url: "/posts/#{@post.id}/likes", scope: :like do |form| %>
+
         <%= form.submit "Like this post", class: "button"%>
         <% end %>
       </div>
