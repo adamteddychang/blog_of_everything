@@ -29,7 +29,7 @@
     <ul class='recent-comms'>
       <li class='comment'>
         <% post.recent_5_comments.each do |comment| %>
-        <p> Username: <%= comment.text %></p>
+        <p> <%= @user.name %>: <%= comment.text %></p>
         <%end%>
       </li>
     </ul>
