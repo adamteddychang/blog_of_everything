@@ -1,4 +1,3 @@
-
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
@@ -14,7 +13,6 @@
  *= require_tree .
  *= require_self
  */
-
 
 header {
   margin: 1rem;
@@ -53,7 +51,22 @@ header {
 .new_user {
   margin-bottom: 1rem;
 }
-
+.action-btns,
+.login a,
+.signup a {
+  border: 1px solid black;
+  color: black;
+  background-color: white;
+  text-decoration: none;
+  padding: 2px 5px;
+  margin: 5px;
+  font-weight: 600;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 4px 4px 3px 1px rgba(0, 0, 0, 0.77);
+  width: 40rem;
+  height: 3rem;
+}
 .login a,
 .signup a {
   text-align: center;
@@ -64,4 +77,4 @@ header {
   text-align: center;
 }
 
-@import "bootstrap";
+@import 'bootstrap';
