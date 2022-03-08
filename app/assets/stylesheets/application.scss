@@ -1,3 +1,4 @@
+
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
@@ -14,52 +15,53 @@
  *= require_self
  */
 
- @import "bootstrap";
- header {
-   margin: 1rem;
- }
 
+header {
+  margin: 1rem;
+}
 
+.login,
+.signup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
- .login {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
- }
-
- #new_user {
-   display: flex;
-   flex-direction: column;
+#new_user {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   justify-content: center;
 }
 
-.field, .actions {   
+.field,
+.actions {
   margin: 0 auto;
 }
 
-#user_email, #user_password{
+#user_email,
+#user_password,
+#user_name,
+#user_bio,
+#user_password_confirmation {
   margin: 1rem;
-  width: 70rem;
-  height: 5rem;
-}
-
-.action-btns, .login a {
-  border: 1px solid black;
-  color: black;
-  background-color: white;
-  text-decoration: none;
-  padding: 2px 5px;
-  margin: 5px;
-  font-weight: 600;
+  width: 40rem;
+  height: 3rem;
   font-size: 24px;
-  cursor: pointer;
-  box-shadow: 4px 4px 3px 1px rgba(0, 0, 0, 0.77);
-  width: 70rem;
-  height: 5rem;
 }
 
-.login a {
+.new_user {
+  margin-bottom: 1rem;
+}
+
+.login a,
+.signup a {
   text-align: center;
   align-items: center;
 }
+
+.alert {
+  text-align: center;
+}
+
+@import "bootstrap";
