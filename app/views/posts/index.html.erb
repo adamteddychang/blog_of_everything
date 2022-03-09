@@ -20,7 +20,9 @@
           <%= link_to "/users/#{@user.id}/posts/#{post.id}",class:'post-link', :action => 'go' do %>
           <h3>Post # <%= post.id %></h3>
           <%end%>
-          
+          <%if can? :destroy, post %>
+          <%= button_to "Delete Post", user_post_path(@user.id, post.id), :method => :delete %>
+          <%end%>
         </div>
 
         <p> Text: <%= post.text %></p>
@@ -28,9 +30,7 @@
           Comments: <%= post.comments_counter %>
           Likes: 0<%= post.likes_counter %>
         </div>
-         <%if can? :destroy, post %>
-          <%= button_to "Delete Post", user_post_path(@user.id, post.id), :method => :delete %>
-          <%end%>
+         
       </li>
     </ul>
     <% if post.comments_counter > 0%>
