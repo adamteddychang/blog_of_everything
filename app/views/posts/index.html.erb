@@ -16,9 +16,13 @@
     <% @posts_list.each do |post| %>
     <ul class='posts'>
       <li class='post'>
-        <%= link_to "/users/#{@user.id}/posts/#{post.id}",class:'post-link', :action => 'go' do %>
-        <h3>Post # <%= post.id %></h3>
-        <%end%>
+        <div class="com-btn">
+          <%= link_to "/users/#{@user.id}/posts/#{post.id}",class:'post-link', :action => 'go' do %>
+          <h3>Post # <%= post.id %></h3>
+          <%end%>
+          
+        </div>
+
         <p> Text: <%= post.text %></p>
         <div class='commentslikes'>
           Comments: <%= post.comments_counter %>
