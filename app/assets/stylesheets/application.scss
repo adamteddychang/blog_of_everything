@@ -79,4 +79,14 @@ header {
   text-align: center;
 }
 
+.com-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.com-btn p {
+  margin: 10px 0;
+}
+
 @import 'bootstrap';
