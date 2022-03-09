@@ -20,5 +20,8 @@
     <%end%>
     <%= render 'layouts/alerts' if notice %>
     <%= render partial: "create_comments" %>
+    <% if can? :destroy, comment %>
+        <%= button_to 'Delete Comment', "/posts/:post_id/comments/#{params[:id]}", method: :delete, params: { comment_id: comment.id} %>
+    <%end%>
   </div>
 </section>
