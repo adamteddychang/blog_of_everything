@@ -15,10 +15,18 @@
     <p><%= @post.text %></p>
   </div>
   <div class="all-comms">
+
     <% @post.comments.each do |comment| %>
-    <p><%= @user.name %> : <%= comment.text %></p>
+    <div class="com-btn">
+      <p><%= @user.name %> : <%= comment.text %></p>
+      <% if can? :destroy, comment %>
+        <%= button_to 'Delete Comment', "/posts/:post_id/comments/#{params[:id]}", method: :delete, params: { comment_id: comment.id} %>
     <%end%>
+    </div>
+    <%end%>
+
     <%= render 'layouts/alerts' if notice %>
     <%= render partial: "create_comments" %>
+    
   </div>
 </section>

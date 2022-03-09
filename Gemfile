@@ -5,6 +5,7 @@ ruby '3.0.3'
 
 gem 'bootstrap', '~> 4.4.1'
 gem 'bullet'
+gem 'cancancan'
 gem 'devise'
 gem 'ffi'
 gem 'jquery-rails'
