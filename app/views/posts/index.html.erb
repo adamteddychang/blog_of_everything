@@ -8,7 +8,11 @@
     </div>
     <div class='user_item'>
       <h2>User <%= @user.name%></h2>
-      <p>Number of posts : <%= @user.posts_counter%></p>
+      <p>Number of posts : <%if @user.posts_counter === nil%>
+        <%=0%>
+        <%else%>
+        <%=@user.posts_counter%>
+        <%end  %></p>
     </div>
   </div>
 
@@ -18,7 +22,7 @@
       <li class='post'>
         <div class="com-btn">
           <%= link_to "/users/#{@user.id}/posts/#{post.id}",class:'post-link', :action => 'go' do %>
-          <h3>Post # <%= post.id %></h3>
+          <h3> <%= post.title %></h3>
           <%end%>
           <%if can? :destroy, post %>
           <%= button_to "Delete Post", user_post_path(@user.id, post.id), :method => :delete %>
@@ -30,7 +34,7 @@
           Comments: <%= post.comments_counter %>
           Likes: 0<%= post.likes_counter %>
         </div>
-         
+
       </li>
     </ul>
     <% if post.comments_counter > 0%>
