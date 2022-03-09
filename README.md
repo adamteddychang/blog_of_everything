@@ -63,6 +63,11 @@ bundle install
 - Twitter: [@AdamChang3](https://twitter.com/AdamChang3) 
 - LinkedIn: [You-Wei(Adam) Chang](https://www.linkedin.com/in/adamteddychang/)
 
+👤 **Yaseer Okino**
+
+- [yaseerokino](https://github.com/yaseerokino)
+- [Yaseer Okino](https://linkedin.com/in/yaseerokino)
+
 
 
 

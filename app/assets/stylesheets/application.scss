@@ -1,0 +1,82 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+header {
+  margin: 1rem;
+}
+
+.login,
+.signup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#new_user {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+}
+
+.field,
+.actions {
+  margin: 0 auto;
+}
+
+#user_email,
+#user_password,
+#user_name,
+#user_bio,
+#user_password_confirmation {
+  margin: 1rem;
+  width: 40rem;
+  height: 3rem;
+  font-size: 24px;
+}
+
+.new_user {
+  margin-bottom: 1rem;
+}
+
+.action-btns,
+.login a,
+.signup a {
+  border: 1px solid black;
+  color: black;
+  background-color: white;
+  text-decoration: none;
+  padding: 2px 5px;
+  margin: 5px;
+  font-weight: 600;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 4px 4px 3px 1px rgba(0, 0, 0, 0.77);
+  width: 40rem;
+  height: 3rem;
+}
+
+.login a,
+.signup a {
+  text-align: center;
+  align-items: center;
+}
+
+.alert {
+  text-align: center;
+}
+
+@import 'bootstrap';

@@ -26,6 +26,7 @@
         </div>
       </li>
     </ul>
+    <% if post.comments_counter > 0%>
     <ul class='recent-comms'>
       <li class='comment'>
         <% post.recent_5_comments.each do |comment| %>
@@ -33,6 +34,7 @@
         <%end%>
       </li>
     </ul>
+    <%end%>
     <%end%>
   </div>
   </div>
