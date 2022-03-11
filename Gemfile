@@ -9,6 +9,8 @@ gem 'cancancan'
 gem 'devise'
 gem 'ffi'
 gem 'jquery-rails'
+gem 'oj'
+gem 'rabl'
 
 gem 'rails-controller-testing'
 gem 'rspec', '~>3.0'

@@ -8,6 +8,7 @@
         <li class="nav-item"><%= link_to "Home", root_path, class: "nav-link" %></li>
         <li class="nav-item"><%= link_to "New post", new_user_post_path(current_user), class: "nav-link" %></li>
         <li class="nav-item"><%= link_to "All posts", user_posts_path(current_user), class: "nav-link" %></li>
+        <li class="nav-item"><%=link_to "See Token", apitoken_user_url(current_user), class: "nav-link"%></li>
         <li class="nav-item"><%= link_to "Sign out", destroy_user_session_path, method: :delete, class: "nav-link"%>
         </li>
         <%end%>
