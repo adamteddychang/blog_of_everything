@@ -21,7 +21,7 @@ Rails.application.routes.draw do
       get 'apitoken'
     end
   end
-  
+
   resources :users, only: %i[show index] do
     resources :posts, only: %i[index create new show destroy]
   end
