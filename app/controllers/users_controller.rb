@@ -1,5 +1,4 @@
 class UsersController < ApplicationController
-  before_action :authenticate_user!
   def index
     @users = User.all.order(created_at: :asc)
   end
@@ -7,5 +6,10 @@ class UsersController < ApplicationController
   def show
     @user = User.find(params[:id])
     @list_post = @user.recent_3_posts
+  end
+
+  def apitoken
+    @user = User.find(params[:id])
+    render json: @user.apitoken, status: :ok
   end
 end
